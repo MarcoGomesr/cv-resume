@@ -1,1 +1,1 @@
-export ResumeCard from "./ResumeCard";
+export { default } from "./ResumeCard";

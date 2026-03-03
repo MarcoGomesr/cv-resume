@@ -1,1 +1,1 @@
-export ScoreCircle from "./ScoreCircle";
+export { default } from "./ScoreCircle";
