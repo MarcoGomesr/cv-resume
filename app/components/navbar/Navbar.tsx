@@ -6,7 +6,7 @@ export default function Navbar() {
 			<Link to="/" className="logo">
 				RESUMIND
 			</Link>
-			<Link className="primary-button w-fit" to="/">
+			<Link className="primary-button w-fit" to="/upload">
 				Upload Resume
 			</Link>
 		</nav>
