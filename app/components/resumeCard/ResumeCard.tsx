@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router";
-import ATS from "~/components/ATS";
-import Details from "~/components/Details";
-import Summary from "~/components/Summary";
-import { usePuterStore } from "~/lib/puter";
+import ATS from "@/components/ATS";
+import Details from "@/components/Details";
+import Summary from "@/components/Summary";
+import { usePuterStore } from "@/lib/puter";
 
 export const meta = () => [
 	{ title: "Resumind | Review " },
@@ -21,7 +21,7 @@ const Resume = () => {
 	useEffect(() => {
 		if (!isLoading && !auth.isAuthenticated)
 			navigate(`/auth?next=/resume/${id}`);
-	}, [isLoading]);
+	}, [isLoading, auth.isAuthenticated, id]);
 
 	useEffect(() => {
 		const loadResume = async () => {
@@ -48,7 +48,7 @@ const Resume = () => {
 		};
 
 		loadResume();
-	}, [id]);
+	}, [id, fs.read]);
 
 	return (
 		<main className="!pt-0">
@@ -69,13 +69,14 @@ const Resume = () => {
 									src={imageUrl}
 									className="w-full h-full object-contain rounded-2xl"
 									title="resume"
+									alt="resume"
 								/>
 							</a>
 						</div>
 					)}
 				</section>
 				<section className="feedback-section">
-					<h2 className="text-4xl !text-black font-bold">Resume Review</h2>
+					<h2 className="text-4xl text-black! font-bold">Resume Review</h2>
 					{feedback ? (
 						<div className="flex flex-col gap-8 animate-in fade-in duration-1000">
 							<Summary feedback={feedback} />
@@ -86,7 +87,11 @@ const Resume = () => {
 							<Details feedback={feedback} />
 						</div>
 					) : (
-						<img src="/images/resume-scan-2.gif" className="w-full" />
+						<img
+							src="/images/resume-scan-2.gif"
+							className="w-full"
+							alt="resume scan"
+						/>
 					)}
 				</section>
 			</div>
