@@ -15,13 +15,13 @@ export const meta = () => {
 		{ name: "description", content: "Upload your resume for AI-powered feedback and ATS scoring" },
 		{ property: "og:title", content: "CV Resume - Upload" },
 		{ property: "og:description", content: "Upload your resume for AI-powered feedback and ATS scoring" },
-		{ property: "og:image", content: `${appUrl}/images/social-meta.webp` },
+		{ property: "og:image", content: "/images/social-meta.webp" },
 		{ property: "og:url", content: `${appUrl}/upload` },
 		{ property: "og:type", content: "website" },
 		{ name: "twitter:card", content: "summary_large_image" },
 		{ name: "twitter:title", content: "CV Resume - Upload" },
 		{ name: "twitter:description", content: "Upload your resume for AI-powered feedback and ATS scoring" },
-		{ name: "twitter:image", content: `${appUrl}/images/social-meta.webp` },
+		{ name: "twitter:image", content: "/images/social-meta.webp" },
 	];
 };
 

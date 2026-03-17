@@ -14,13 +14,13 @@ export function meta({}: Route.MetaArgs) {
 		{ name: "description", content: "Track your applications and get AI-powered resume feedback" },
 		{ property: "og:title", content: "CV Resume - Track Your Applications" },
 		{ property: "og:description", content: "Track your applications and get AI-powered resume feedback" },
-		{ property: "og:image", content: `${appUrl}/images/social-meta.webp` },
+		{ property: "og:image", content: "/images/social-meta.webp" },
 		{ property: "og:url", content: appUrl },
 		{ property: "og:type", content: "website" },
 		{ name: "twitter:card", content: "summary_large_image" },
 		{ name: "twitter:title", content: "CV Resume - Track Your Applications" },
 		{ name: "twitter:description", content: "Track your applications and get AI-powered resume feedback" },
-		{ name: "twitter:image", content: `${appUrl}/images/social-meta.webp` },
+		{ name: "twitter:image", content: "/images/social-meta.webp" },
 	];
 }
 

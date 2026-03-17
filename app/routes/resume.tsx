@@ -14,13 +14,13 @@ export const meta = () => {
 		{ name: "description", content: "Detailed overview of your CV with AI-powered feedback" },
 		{ property: "og:title", content: "CV Resume - Resume Review" },
 		{ property: "og:description", content: "Detailed overview of your CV with AI-powered feedback" },
-		{ property: "og:image", content: `${appUrl}/images/social-meta.webp` },
+		{ property: "og:image", content: "/images/social-meta.webp" },
 		{ property: "og:url", content: `${appUrl}/resume` },
 		{ property: "og:type", content: "website" },
 		{ name: "twitter:card", content: "summary_large_image" },
 		{ name: "twitter:title", content: "CV Resume - Resume Review" },
 		{ name: "twitter:description", content: "Detailed overview of your CV with AI-powered feedback" },
-		{ name: "twitter:image", content: `${appUrl}/images/social-meta.webp` },
+		{ name: "twitter:image", content: "/images/social-meta.webp" },
 	];
 };
 
