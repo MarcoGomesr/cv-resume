@@ -1,5 +1,5 @@
-import ScoreGauge from "../Score";
-import ScoreBadge from "../ScoreBadge";
+import ScoreGauge from "@/components/Score/Score.tsx";
+import ScoreBadge from "@/components/ScoreBadge/ScoreBagde.tsx";
 
 const Category = ({ title, score }: { title: string; score: number }) => {
 	const textColor =

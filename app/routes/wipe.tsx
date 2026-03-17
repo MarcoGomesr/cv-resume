@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
-import { usePuterStore } from "../lib/puter";
+import { usePuterStore } from "@/lib/puter.ts";
 
 const WipeApp = () => {
 	const { auth, isLoading, error, clearError, fs, ai, kv } = usePuterStore();

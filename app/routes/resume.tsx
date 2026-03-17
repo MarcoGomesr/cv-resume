@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router";
-import ATS from "../components/ATS/ATS";
-import Details from "../components/Details/Details";
-import Summary from "../components/Summary";
-import { usePuterStore } from "../lib/puter";
+import ATS from "@/components/ATS/ATS.tsx";
+import Details from "@/components/Details/Details.tsx";
+import Summary from "@/components/Summary/Summary.tsx";
+import { usePuterStore } from "@/lib/puter.ts";
 
 export const meta = () => {
 	return [

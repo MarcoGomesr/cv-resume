@@ -3,8 +3,8 @@ import {
 	AccordionContent,
 	AccordionHeader,
 	AccordionItem,
-} from "../ui/Accordion";
-import { cn } from "../../lib/utils";
+} from "@/components/ui/Accordion.tsx";
+import { cn } from "@/lib/utils.ts";
 
 const ScoreBadge = ({ score }: { score: number }) => {
 	return (
