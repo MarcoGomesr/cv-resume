@@ -1,22 +1,31 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router";
-import Navbar from "@/components/Navbar/Navbar.tsx";
-import ResumeCard from "@/components/ResumeCard/ResumeCard.tsx";
-import { usePuterStore } from "@/lib/puter.ts";
+import Navbar from "@/components/Navbar/Navbar";
+import ResumeCard from "@/components/ResumeCard/ResumeCard";
+import { usePuterStore } from "@/lib/puter";
 import type { Route } from "./+types/home";
 
 export function meta({}: Route.MetaArgs) {
 	return [
 		{ title: "CV Resume - Track Your Applications" },
-		{ name: "description", content: "Track your applications and get AI-powered resume feedback" },
+		{
+			name: "description",
+			content: "Track your applications and get AI-powered resume feedback",
+		},
 		{ property: "og:title", content: "CV Resume - Track Your Applications" },
-		{ property: "og:description", content: "Track your applications and get AI-powered resume feedback" },
+		{
+			property: "og:description",
+			content: "Track your applications and get AI-powered resume feedback",
+		},
 		{ property: "og:image", content: "/images/social-meta.webp" },
 		{ property: "og:url", content: "/" },
 		{ property: "og:type", content: "website" },
 		{ name: "twitter:card", content: "summary_large_image" },
 		{ name: "twitter:title", content: "CV Resume - Track Your Applications" },
-		{ name: "twitter:description", content: "Track your applications and get AI-powered resume feedback" },
+		{
+			name: "twitter:description",
+			content: "Track your applications and get AI-powered resume feedback",
+		},
 		{ name: "twitter:image", content: "/images/social-meta.webp" },
 	];
 }
