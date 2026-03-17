@@ -6,16 +6,13 @@ import Summary from "@/components/Summary";
 import { usePuterStore } from "@/lib/puter";
 
 export const meta = () => {
-	const appUrl =
-		import.meta.env.VITE_APP_URL || "http://localhost:5173";
-
 	return [
 		{ title: "CV Resume - Resume Review" },
 		{ name: "description", content: "Detailed overview of your CV with AI-powered feedback" },
 		{ property: "og:title", content: "CV Resume - Resume Review" },
 		{ property: "og:description", content: "Detailed overview of your CV with AI-powered feedback" },
 		{ property: "og:image", content: "/images/social-meta.webp" },
-		{ property: "og:url", content: `${appUrl}/resume` },
+		{ property: "og:url", content: "/resume" },
 		{ property: "og:type", content: "website" },
 		{ name: "twitter:card", content: "summary_large_image" },
 		{ name: "twitter:title", content: "CV Resume - Resume Review" },

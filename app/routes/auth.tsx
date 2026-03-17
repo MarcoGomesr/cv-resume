@@ -3,16 +3,13 @@ import { useLocation, useNavigate } from "react-router";
 import { usePuterStore } from "@/lib/puter";
 
 export const meta = () => {
-	const appUrl =
-		import.meta.env.VITE_APP_URL || "http://localhost:5173";
-
 	return [
 		{ title: "CV Resume - Login" },
 		{ name: "description", content: "Log into your account to manage your resumes" },
 		{ property: "og:title", content: "CV Resume - Login" },
 		{ property: "og:description", content: "Log into your account to manage your resumes" },
 		{ property: "og:image", content: "/images/social-meta.webp" },
-		{ property: "og:url", content: `${appUrl}/auth` },
+		{ property: "og:url", content: "/auth" },
 		{ property: "og:type", content: "website" },
 		{ name: "twitter:card", content: "summary_large_image" },
 		{ name: "twitter:title", content: "CV Resume - Login" },

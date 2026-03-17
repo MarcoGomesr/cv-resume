@@ -7,16 +7,13 @@ import { convertPdfToImage } from "@/lib/pdf2image";
 import { usePuterStore } from "@/lib/puter";
 
 export const meta = () => {
-	const appUrl =
-		import.meta.env.VITE_APP_URL || "http://localhost:5173";
-
 	return [
 		{ title: "CV Resume - Upload" },
 		{ name: "description", content: "Upload your resume for AI-powered feedback and ATS scoring" },
 		{ property: "og:title", content: "CV Resume - Upload" },
 		{ property: "og:description", content: "Upload your resume for AI-powered feedback and ATS scoring" },
 		{ property: "og:image", content: "/images/social-meta.webp" },
-		{ property: "og:url", content: `${appUrl}/upload` },
+		{ property: "og:url", content: "/upload" },
 		{ property: "og:type", content: "website" },
 		{ name: "twitter:card", content: "summary_large_image" },
 		{ name: "twitter:title", content: "CV Resume - Upload" },

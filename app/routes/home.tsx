@@ -6,16 +6,13 @@ import { usePuterStore } from "@/lib/puter";
 import type { Route } from "./+types/home";
 
 export function meta({}: Route.MetaArgs) {
-	const appUrl =
-		import.meta.env.VITE_APP_URL || "http://localhost:5173";
-
 	return [
 		{ title: "CV Resume - Track Your Applications" },
 		{ name: "description", content: "Track your applications and get AI-powered resume feedback" },
 		{ property: "og:title", content: "CV Resume - Track Your Applications" },
 		{ property: "og:description", content: "Track your applications and get AI-powered resume feedback" },
 		{ property: "og:image", content: "/images/social-meta.webp" },
-		{ property: "og:url", content: appUrl },
+		{ property: "og:url", content: "/" },
 		{ property: "og:type", content: "website" },
 		{ name: "twitter:card", content: "summary_large_image" },
 		{ name: "twitter:title", content: "CV Resume - Track Your Applications" },
