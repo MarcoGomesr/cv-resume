@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router";
-import Navbar from "@/components/Navbar/Navbar";
-import ResumeCard from "@/components/ResumeCard/ResumeCard";
-import { usePuterStore } from "@/lib/puter";
+import Navbar from "../components/Navbar/Navbar";
+import ResumeCard from "../components/ResumeCard/ResumeCard";
+import { usePuterStore } from "../lib/puter";
 import type { Route } from "./+types/home";
 
 export function meta({}: Route.MetaArgs) {

@@ -1,10 +1,10 @@
 import { type FormEvent, useState } from "react";
 import { useNavigate } from "react-router";
-import FileUploader from "@/components/FileUploader/FileUploader";
-import Navbar from "@/components/Navbar/Navbar";
-import { prepareInstructions } from "@/consts";
-import { convertPdfToImage } from "@/lib/pdf2image";
-import { usePuterStore } from "@/lib/puter";
+import FileUploader from "../components/FileUploader/FileUploader";
+import Navbar from "../components/Navbar/Navbar";
+import { prepareInstructions } from "../consts";
+import { convertPdfToImage } from "../lib/pdf2image";
+import { usePuterStore } from "../lib/puter";
 
 export const meta = () => {
 	return [
