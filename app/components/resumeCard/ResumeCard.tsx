@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router";
-import ScoreCircle from "@/components/ScoreCircle/ScoreCircle.tsx";
+import ScoreCircle from "@/components/scoreCircle/ScoreCircle";
 import { usePuterStore } from "@/lib/puter.ts";
 
 const ResumeCard = ({

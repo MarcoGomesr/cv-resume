@@ -1,6 +1,6 @@
 import { type FormEvent, useState } from "react";
 import { useNavigate } from "react-router";
-import FileUploader from "@/components/FileUploader/FileUploader.tsx";
+import FileUploader from "@/components/fileUploader/FileUploader";
 import Navbar from "@/components/navbar/Navbar";
 import { prepareInstructions } from "@/consts.ts";
 import { convertPdfToImage } from "@/lib/pdf2image.ts";
