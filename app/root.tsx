@@ -25,6 +25,25 @@ export const links: Route.LinksFunction = () => [
 	},
 ];
 
+export function meta({}: Route.MetaArgs) {
+	const appUrl =
+		import.meta.env.VITE_APP_URL || "http://localhost:5173";
+
+	return [
+		{ title: "CV Resume - AI Resume Analyzer" },
+		{ name: "description", content: "Get AI-powered feedback on your resume" },
+		{ property: "og:title", content: "CV Resume - AI Resume Analyzer" },
+		{ property: "og:description", content: "Get AI-powered feedback on your resume" },
+		{ property: "og:image", content: `${appUrl}/images/social-meta.webp` },
+		{ property: "og:url", content: appUrl },
+		{ property: "og:type", content: "website" },
+		{ name: "twitter:card", content: "summary_large_image" },
+		{ name: "twitter:title", content: "CV Resume - AI Resume Analyzer" },
+		{ name: "twitter:description", content: "Get AI-powered feedback on your resume" },
+		{ name: "twitter:image", content: `${appUrl}/images/social-meta.webp` },
+	];
+}
+
 export function Layout({ children }: { children: React.ReactNode }) {
 	const { init } = usePuterStore();
 
