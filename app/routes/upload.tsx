@@ -1,7 +1,7 @@
 import { type FormEvent, useState } from "react";
 import { useNavigate } from "react-router";
 import FileUploader from "@/components/FileUploader";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/Navbar/Navbar";
 import { prepareInstructions } from "@/consts";
 import { convertPdfToImage } from "@/lib/pdf2image";
 import { usePuterStore } from "@/lib/puter";
