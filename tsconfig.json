@@ -16,8 +16,7 @@
 		"ignoreDeprecations": "6.0",
 		"baseUrl": ".",
 		"paths": {
-			"@/*": ["./app/*"],
-			"@/lib": ["./app/lib"]
+			"@/*": ["./app/*"]
 		},
 		"esModuleInterop": true,
 		"verbatimModuleSyntax": true,
