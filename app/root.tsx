@@ -56,6 +56,21 @@ export function Layout({ children }: { children: React.ReactNode }) {
 			<head>
 				<meta charSet="utf-8" />
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
+				<meta name="google-site-verification" content="Vg2zWgG4K3Kz5rM" />
+				<script
+					async
+					src="https://www.googletagmanager.com/gtag/js?id=G-RNDCBC2T6F"
+				></script>
+				<script
+					dangerouslySetInnerHTML={{
+						__html: `
+						window.dataLayer = window.dataLayer || [];
+						function gtag(){dataLayer.push(arguments);}
+						gtag('js', new Date());
+						gtag('config', 'G-RNDCBC2T6F');
+					`,
+					}}
+				/>
 				<Meta />
 				<Links />
 			</head>
