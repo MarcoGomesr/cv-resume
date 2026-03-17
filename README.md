@@ -1,24 +1,65 @@
-# Welcome to React Router!
+# CV Resume
 
-A modern, production-ready template for building full-stack React applications using React Router.
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+AI-powered resume analyzer that evaluates CVs against job descriptions using ATS scoring.
 
 ## Features
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+- Upload CV/PDF for AI analysis
+- ATS scoring with improvement tips
+- Multiple resume management
+- Cloud storage via Puter
+
+## Tech Stack
+
+### Languages
+- **TypeScript** - Type-safe JavaScript
+- **CSS** - Tailwind CSS 4
+
+### Libraries & Frameworks
+| Library | Purpose |
+|---------|---------|
+| React Router 7 | Full-stack framework |
+| React 19 | UI library |
+| Zustand | State management |
+| Tailwind CSS 4 | Styling |
+| PDF.js | PDF processing |
+| Puter SDK | Cloud storage & AI |
+| react-dropzone | File uploads |
+
+## Project Structure
+
+```
+app/
+├── components/
+│   ├── ATS/              # ATS scoring component
+│   ├── Details/          # Detailed feedback
+│   ├── FileUploader/     # File upload UI
+│   ├── Navbar/           # Navigation
+│   ├── ResumeCard/       # Resume card display
+│   ├── Score/            # Score components
+│   ├── ScoreBadge/       # Score badge
+│   ├── ScoreCircle/      # Circular score display
+│   ├── Summary/          # Feedback summary
+│   └── ui/               # Reusable UI components
+├── routes/
+│   ├── auth.tsx          # Authentication
+│   ├── home.tsx          # Homepage
+│   ├── resume.tsx        # Resume detail page
+│   ├── upload.tsx        # Upload page
+│   └── wipe.tsx          # Clear app data
+├── lib/
+│   ├── pdf2image.ts      # PDF to image conversion
+│   ├── puter.ts          # Puter SDK integration
+│   ├── formatSize.ts     # File size formatting
+│   └── utils.ts          # General utilities
+├── consts.ts             # App constants
+├── data/                 # Type definitions
+└── root.tsx              # App root
+```
 
 ## Getting Started
 
 ### Installation
-
-Install the dependencies:
 
 ```bash
 npm install
@@ -26,62 +67,18 @@ npm install
 
 ### Development
 
-Start the development server with HMR:
-
 ```bash
 npm run dev
 ```
 
 Your application will be available at `http://localhost:5173`.
 
-## Building for Production
-
-Create a production build:
+### Build
 
 ```bash
 npm run build
 ```
 
-## Deployment
+## License
 
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+MIT
